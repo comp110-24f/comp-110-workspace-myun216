@@ -25,7 +25,7 @@ def contains_char(word: str, char: str) -> bool:
     return False
 
 
-def emojified(secret: str, guess: str) -> str:
+def emojified(guess: str, secret: str) -> str:
     "Comparing 2 strings of equal length, returning an emoji box if correct chars"
     assert len(secret) == len(guess)
     white_box: str = "\U00002B1C"
